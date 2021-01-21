@@ -21,4 +21,9 @@ public class ClientRestApi {
     private ResponseEntity<?> getAllClients(){
         return new ResponseEntity<>(clientService.findAll(), HttpStatus.OK);
     }
+
+    @GetMapping(value = "/server-test")
+    private String serverTest(){
+        return "server works";
+    }
 }
