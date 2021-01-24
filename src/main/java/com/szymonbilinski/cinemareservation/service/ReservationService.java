@@ -9,4 +9,6 @@ public interface ReservationService {
     List<Room> getAllRooms();
 
     Iterable<Seats> getRoomSeats();
+
+    boolean checkSeat(String seat);
 }

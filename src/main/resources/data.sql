@@ -35,6 +35,19 @@
 --                     foreign key (id_room) references ROOM(id_room)
 -- );
 
+create table RESERVATIONS(
+                        id_reservation INT AUTO_INCREMENT PRIMARY KEY,
+                        first_name VARCHAR(32) NOT NULL,
+                        last_name VARCHAR(32) NOT NULL,
+                        tele_no VARCHAR(9) NOT NULL,
+                        price DOUBLE NOT NULL,
+                        id_seat INT NOT NULL,
+                        id_repertoire INT NOT NULL,
+                        foreign key (id_seat) references SEATS(id_seat),
+                        foreign key (id_repertoire) references REPERTOIRE(id_repertoire)
+
+)
+
 INSERT INTO CLIENT (first_name,last_name, email) VALUES('Szymon','Bilinski','szymon.zsp5@gmail.com');
 
 INSERT INTO MOVIE (title,category,year_production) VALUES ('Kiler','komedia','1992');

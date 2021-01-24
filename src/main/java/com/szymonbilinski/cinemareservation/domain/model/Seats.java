@@ -25,4 +25,7 @@ public class Seats {
 
     @Column(name = "type_seat")
     private boolean typeSeat;
+
+    @Column(name = "status")
+    private boolean status;
 }
