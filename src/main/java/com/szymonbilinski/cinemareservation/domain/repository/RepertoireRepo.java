@@ -6,4 +6,5 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface RepertoireRepo extends CrudRepository<Repertoire,Long> {
+    Repertoire findFirstByIdRepertoire(long id);
 }
