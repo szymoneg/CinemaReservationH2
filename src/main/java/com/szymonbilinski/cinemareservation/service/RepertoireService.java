@@ -12,5 +12,5 @@ public interface RepertoireService {
 
     List<Repertoire> getAllMoviesDate(String date);
 
-    List<Seats> getMovieSeats(String movieNum);
+    List<Seats> getMovieSeats(long idMovie);
 }
