@@ -28,4 +28,7 @@ public class Repertoire {
 
     @Column(name = "time")
     private Time startTime;
+
+    @Column(name = "date")
+    private String dateRep;
 }

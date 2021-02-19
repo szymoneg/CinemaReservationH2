@@ -31,7 +31,7 @@ public class RepertoireServiceImpl implements RepertoireService {
     //TODO change time to timestamp in db
     @Override
     public List<Repertoire> getAllMoviesDate(String date) {
-        return null;
+        return repertoireRepo.findAllByDateRep(date);
     }
 
     @Override

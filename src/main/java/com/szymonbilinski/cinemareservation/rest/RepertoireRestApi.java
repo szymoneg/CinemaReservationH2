@@ -24,4 +24,9 @@ public class RepertoireRestApi {
     public ResponseEntity<?> getRepertoireSeats(@PathVariable("id_room") long idRoom){
         return new ResponseEntity<>(repertoireService.getMovieSeats(idRoom), HttpStatus.OK);
     }
+
+    @GetMapping(value = "/repertoire/date/{date}")
+    public ResponseEntity<?> getRepertoireByDate(@PathVariable("date") String date){
+        return new ResponseEntity<>(repertoireService.getAllMoviesDate(date), HttpStatus.OK);
+    }
 }
